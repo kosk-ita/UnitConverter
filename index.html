@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <h1>単位変換機 for DTP</h1>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=600 height=960></canvas>
       <div id="unity-loading-bar">
@@ -117,5 +118,11 @@
       };
       document.body.appendChild(script);
     </script>
+    <p>illustratorやinDesignを使っていると頭を悩ませる様々な長さの単位（Q, H, pt, mm, inch）を相互に変換します。</p>
+    <p>スマホアプリ用に作っているものなので、こちらのWeb版には以下のような問題があります。</p>
+    <ul>
+      <li>クリップボードへのコピーができない。</li>
+      <li>スマホから開いた場合、キーボード入力ができない。</li>
+    </ul>
   </body>
 </html>
