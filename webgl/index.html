@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=600,user-scalable=yes">
     <title>Unity WebGL Player | UnitConverterForDTP</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
@@ -24,6 +25,12 @@
         <div id="unity-build-title">UnitConverterForDTP</div>
       </div>
     </div>
+    <p>illustratorやinDesignを使っていると頭を悩まされる様々な長さの単位（Q, H, pt, mm, inch）を相互に変換します。</p>
+    <p>スマホアプリ用に作っているものなので、こちらのWeb版には以下のような問題があります。</p>
+    <ul>
+      <li>クリップボードへのコピーができない。</li>
+      <li>スマホから開いた場合、キーボード入力ができない。</li>
+    </ul>
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -118,11 +125,5 @@
       };
       document.body.appendChild(script);
     </script>
-    <p>illustratorやinDesignを使っていると頭を悩ませる様々な長さの単位（Q, H, pt, mm, inch）を相互に変換します。</p>
-    <p>スマホアプリ用に作っているものなので、こちらのWeb版には以下のような問題があります。</p>
-    <ul>
-      <li>クリップボードへのコピーができない。</li>
-      <li>スマホから開いた場合、キーボード入力ができない。</li>
-    </ul>
   </body>
 </html>
