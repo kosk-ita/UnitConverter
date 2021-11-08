@@ -94,3 +94,54 @@ body {
     padding: 10px;
     display: none
 }
+
+/* 追加 */
+
+/* WebGLの親になるdiv要素のプロパティ */
+
+#gameContainer-wrapper {
+    /* id名"gameContainer-wrapper"のdiv要素 */
+    position: relative;
+    /* 相対値にレイアウト */
+    width: 100%;
+    /* 幅指定 */
+}
+
+/* WebGLの親になるdiv要素の前に付ける疑似要素のプロパティ */
+
+#gameContainer-wrapper:before {
+    /* div要素の前に追加するので":before”を指定 */
+    content: "";
+    /* 疑似要素の内容。空にするので"" */
+    display: block;
+    /* 疑似要素をブロック要素にする */
+    padding-top: 56.25%;
+    /* div要素の幅に対する高さの比率 */
+}
+
+/* WebGLを表示する要素のプロパティ */
+
+#gameContainer {
+    position: absolute;
+    /* 絶対位置にレイアウト */
+    top: 0;
+    /* 垂直位置指定 */
+    left: 0;
+    /* 水平位置指定 */
+    width: 100%;
+    /* 幅指定 */
+    height: 100%;
+    /* 高さ指定 */
+}
+
+/* WebGLを表示するdiv要素"gameContainer"とdiv要素"footer"を包むdiv要素 */
+
+.webgl-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /* 追加したプロパティ：幅を指定 */
+}

@@ -1,0 +1,44 @@
+.lw {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 60px;
+
+}
+
+.description {
+    float: left;
+    width: 35%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 8px #808080;
+    -moz-box-shadow: 3px 3px 8px #808080;
+    box-shadow: 3px 3px 8px #808080;
+    background-color: #AFEEEE;
+    padding: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12pt;
+    color: #000000;
+    text-align: left;
+}
+
+/* WebGLの親になるdiv要素のプロパティ */
+div.webgl {
+    float: right;
+	position: relative; /* 相対値にレイアウト */
+    height: auto;
+	width: 60%; /* 100%は欲張りなので少し遠慮 */
+	}
+/* WebGLの親になるdiv要素の前に付ける疑似要素のプロパティ */
+div.webgl:before { /* div要素の前に追加するので":before”を指定 */
+	content: ""; /* 疑似要素の内容。空にするので"" */
+	display: block;  /* ブロック要素にする */
+	padding-top: 160%; /* div要素の幅に対する高さの比率 */
+	}
+/* WebGLを埋め込むiframe要素のプロパティ */
+div.webgl iframe {
+	position: absolute; /* 絶対位置にレイアウト */
+	top: 0; /* 垂直位置指定 */
+	left: 0; /* 水平位置指定 */
+	width: 100%;  /* 幅指定 */
+	height: 100%; /* 高さ指定 */
+	}
