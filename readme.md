@@ -2,6 +2,7 @@
 
 Unityで制作。DTPでよく使う単位換算を手軽にできるツールです。
 
-WebGL版をGithub Pagesで公開しています。
-
-→ https://kosk-ita.github.io/UnitConverter/
+- WebGL版
+  https://kosk-ita.github.io/UnitConverter/
+- Android版
+  https://play.google.com/store/apps/details?id=com.KellenStudo.UnitConverterForDTP
